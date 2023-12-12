@@ -1,15 +1,13 @@
 import java.util.Stack;
 
 public class CalculadoraRPN {
-    // Pilha de operandos
+
     private Stack<NumeroComplexo> pilhaOperandos;
 
-    // Construtor que inicializa a calculadora
     public CalculadoraRPN() {
         pilhaOperandos = new Stack<>();
     }
 
-    // Método que adiciona um número real ou complexo à pilha de operandos
     public void push(double real, double imag) {
         NumeroComplexo num = new NumeroComplexo(real, imag);
         pilhaOperandos.push(num);

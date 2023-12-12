@@ -1,20 +1,16 @@
 public class NumeroComplexo {
-    // Atributos para representar a parte real e a parte imaginária do número complexo
     private double real;
     private double imaginario;
 
-    // Construtor para inicializar os atributos do número complexo
     public NumeroComplexo(double real, double imaginario) {
         this.real = real;
         this.imaginario = imaginario;
     }
 
-    // Método para retornar a parte real do número complexo
     public double getReal() {
         return this.real;
     }
 
-    // Método para retornar a parte imaginária do número complexo
     public double getImaginario() {
         return this.imaginario;
     }

@@ -284,7 +284,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {
         String bck = null;
-        if(jTextField1.getText().length() > 0){
+        if(!jTextField1.getText().isEmpty()){
             StringBuilder str = new StringBuilder(jTextField1.getText());
             str.deleteCharAt(jTextField1.getText().length() - 1);
             bck = str.toString();
